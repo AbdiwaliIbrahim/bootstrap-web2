@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURORATOURS</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark ms-auto ">
+    <div class="container-fluid container">
+      <a class="navbar-brand text-uppercase" href="#">AURORATOURS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="#packages">PACKAGE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+<main>
+  
+  <div  class="modal fade" tabindex="-1" id="booking-modal"  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Book a Tour</h5>
+          <button type="button" class="btn-close mx-auto " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-dialog-centered">
+          <form action="#">
+            <div class="row ">
+              <div class="form-floating col-sm">
+                <input type="email" id="email1" class="form-control text-center">
+                <label for="email1 " >Your email address </label>
+              </div>
+
+              <div class="form-floating col-sm">
+                <select  id="select1" class="form-select"> 
+                  <option >Somalia - $400</option>
+                  <option >Uganda - $200</option>
+                  <option >Tanzania - $300</option>
+                </select>
+                <label for="select1"> Pick a Tour</label>
+              </div>
+            </div>
+            
+          
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Check out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleDark" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item" data-bs-interval="10000">
+        <img src="istockphoto-1325299873-612x612.webp" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption d-md-block top-0 mt-5">
+          <p class="fs-3">First slide label</p>
+          <h1 class="display-4 fw-bolder text-capitalize">Some representative placeholder content for the first slide.</h1>
+          <button class="btn btn-primary px-3 py-2 mt-5 fs-5 " data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</button>
+        </div>
+        
+      </div>
+      <div class="carousel-item c-item" data-bs-interval="2000">
+        <img src="premium_photo-1697729658470-04117b32fd03.avif" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption  d-md-block top-0 mt-5">
+          <p>Second slide label</p>
+          <h1 class="display-4 fw-bolder text-capitalize">Some representative placeholder content for the second slide.</h1>
+          <button class="btn btn-primary px-3 py-2 mt-5 fs-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</button>
+        </div>
+        
+      </div>
+      <div class="carousel-item c-item">
+        <img src="photo-1501362343565-93d7318347cf.avif" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption  d-md-block top-0 mt-5">
+          <p>Discover the hidden world</p>
+          <h1 class="display-4 fw-bolder text-capitalize">Some representative placeholder content for the third slide.</h1>
+          <button class="btn btn-primary px-3 py-2 mt-5 fs-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="c-overview ">
+    <div class="container d-flex align-items-center h-100">
+      <div class="row w-100 text-center fs-4">
+    <div class="col-xl me-4">
+      <img src="airplane-fill (1).svg" alt="" srcset="">
+      3 amaizing destinations
+    </div>
+    <div class="col-xl me-5">
+      <img src="wallet-fill.svg" alt="" srcset="">
+      Only pay 5% up front
+    </div>
+    <div class="col-xl ">
+      <img src="patch-check-fill.svg" alt="" srcset="">
+      1000's of customers
+    </div>
+  </div>
+  </div>
+  </section>
+  <section id='packages' class=" pt-md-5 ">
+    <h2 class="text-center my-5" >Packages</h2>
+    <div class="container">
+    <div class="row ">
+
+      <div class="card col-sm me-4 px-0 my-4" >
+        <img src="premium_photo-1697729658470-04117b32fd03.avif" class="card-img-top c-card" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="btn btn-primary me-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book now</button>
+          
+        </div>
+      </div>
+
+      <div class="col-sm d-flex card px-0 me-3 my-4 " 
+      >
+        <img src="istockphoto-1325299873-612x612.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="btn btn-primary me-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book now</button>
+        </div>
+      </div>
+
+      <div class="card col-sm me-3 px-0 ms-4 my-4" 
+      >
+        <img src="photo-1501362343565-93d7318347cf.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <button class="btn btn-primary me-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section id="faq" class=" py-md-5 px-5 container">
+<h2 class="me-5"> Frequently asked questions</h2>
+<div class="accordion w-75 mx-auto container mt-5" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+</main>
+<footer class="bg-dark py-4 mt-5">
+    <div class="container text-light text-center">
+      <p class="display-5 mb-3">AuroraTours</p>
+      <small class="text-white-50">&copy;Copyright by Ibrahim Bulle</small>
+    </div>
+</footer>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
